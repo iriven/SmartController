@@ -17,25 +17,17 @@
     stopOnRisky="false"
     verbose="false">
     <testsuites>
-        <testsuite name="Unit">
-            <directory>tests/Unit</directory>
-        </testsuite>
-        <testsuite name="Feature">
-            <directory>tests/Feature</directory>
-        </testsuite>
         <testsuite name="Strategy">
-            <file>tests/Feature/SmartStrategyTest.php</file>
+            <file>tests/SmartStrategyTest.php</file>
         </testsuite>
         <testsuite name="Factory">
-            <file>tests/Unit/ControllerFactoryTest.php</file>
-            <file>tests/Feature/ControllerFactoryTest.php</file>
+            <file>tests/ControllerFactoryTest.php</file>
+        </testsuite>
+        <testsuite name="Controller">
+            <file>tests/SmartControllerTest.php</file>
         </testsuite>
         <testsuite name="Complete">
             <directory>tests/</directory>
-        </testsuite>
-        <testsuite name="potentialComplete">
-            <file>tests/Feature/SmartStrategyTest.php</file>
-            <file>tests/Unit/ControllerFactoryTest.php</file>
         </testsuite>
     </testsuites>
     <filter>
