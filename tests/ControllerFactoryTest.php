@@ -1,6 +1,6 @@
 <?php
 
-namespace Xocotlah\SmartController\Tests\Feature;
+namespace Xocotlah\SmartController\Tests;
 
 use League\Container\Container;
 use League\Route\RouteCollection;

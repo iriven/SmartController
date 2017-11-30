@@ -1,6 +1,6 @@
 <?php
 
-namespace Xocotlah\SmartController\Tests\Feature;
+namespace Xocotlah\SmartController\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Xocotlah\SmartController\Tests\Asset\ClassController;
