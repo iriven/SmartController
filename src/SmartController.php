@@ -25,7 +25,7 @@ abstract class SmartController implements SmartControllerInterface
      * The Router instance
      * @var League\Route\RouteCollection
      */
-    protected $router;
+    private $router;
 
     /**
      * The Route parameters
