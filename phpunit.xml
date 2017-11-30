@@ -1,0 +1,49 @@
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/6.3/phpunit.xsd"
+    backupGlobals="false"
+    backupStaticAttributes="false"
+    bootstrap="./vendor/autoload.php"
+    cacheTokens="false"
+    colors="true"
+    convertErrorsToExceptions="true"
+    convertNoticesToExceptions="true"
+    convertWarningsToExceptions="true"
+    defaultTestSuite="Complete"
+    stopOnError="false"
+    stopOnFailure="false"
+    stopOnIncomplete="false"
+    stopOnSkipped="false"
+    stopOnRisky="false"
+    verbose="false">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="Feature">
+            <directory>tests/Feature</directory>
+        </testsuite>
+        <testsuite name="Strategy">
+            <file>tests/Feature/SmartStrategyTest.php</file>
+        </testsuite>
+        <testsuite name="Factory">
+            <file>tests/Unit/ControllerFactoryTest.php</file>
+            <file>tests/Feature/ControllerFactoryTest.php</file>
+        </testsuite>
+        <testsuite name="Complete">
+            <directory>tests/</directory>
+        </testsuite>
+        <testsuite name="potentialComplete">
+            <file>tests/Feature/SmartStrategyTest.php</file>
+            <file>tests/Unit/ControllerFactoryTest.php</file>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="./.coverage"/>
+    </logging>
+</phpunit>
