@@ -2,12 +2,6 @@
     "name": "xocotlah/smart-controller",
     "description": "Smart controller to use with League/Route",
     "type": "library",
-    "require": {
-        "league/route": "^3.0"
-    },
-    "require-dev": {
-        "zendframework/zend-diactoros": "^1.6"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -15,6 +9,9 @@
             "email": "arcesilas@neutre.email"
         }
     ],
+    "require": {
+        "league/route": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Xocotlah\\SmartController\\": "src/"
