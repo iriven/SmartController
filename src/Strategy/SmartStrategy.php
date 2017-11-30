@@ -51,6 +51,13 @@ class SmartStrategy extends ApplicationStrategy
         };
     }
 
+    /**
+     * Elaborates the response: write content, get ready for json header if needed
+     * @method elaborateResponse
+     * @param  scalar|array|ResponseInterface     $content
+     * @param  Psr\Http\Message\ResponseInterface $response
+     * @return Psr\Http\Message\ResponseInterface
+     */
     protected function elaborateResponse($content, $response)
     {
         if (is_scalar($content) || (is_object($content) && method_exists($content, '__toString'))) {

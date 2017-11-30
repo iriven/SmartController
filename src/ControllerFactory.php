@@ -9,11 +9,15 @@ use Xocotlah\SmartController\SmartControllerInterface;
 class ControllerFactory extends ReflectionContainer
 {
 
+    /**
+     * Resolved controllers
+     * @var array
+     */
     protected $resolved = [];
 
     /**
      * Namespace prefix to possibly apply to controllers class names
-     * @var [type]
+     * @var string
      */
     protected $namespacePrefix;
 
@@ -63,12 +67,23 @@ class ControllerFactory extends ReflectionContainer
         );
     }
 
+    /**
+     * Check if specified class|object implements SmartControllerInterface
+     * @method isSmartController
+     * @param  string|object $className
+     * @return boolean
+     */
     protected function isSmartController($className)
     {
         $interfaces = class_implements($className);
         return in_array(SmartControllerInterface::class, $interfaces);
     }
 
+    /**
+     * Set the default namespace prefix
+     * @method setNamespacePrefix
+     * @param  string $prefix
+     */
     public function setNamespacePrefix($prefix)
     {
         $this->namespacePrefix = $prefix;

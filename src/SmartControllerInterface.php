@@ -24,7 +24,7 @@ interface SmartControllerInterface
     /**
      * Inject the route parameters
      * @method setParams
-     * @param  array     $params
+     * @param  array $params
      */
     public function setParams(array $params);
 }
