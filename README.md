@@ -1,5 +1,11 @@
 # SmartController
 
+[![Packagist](https://img.shields.io/packagist/v/Xocotlah/smart-controller.svg?label=Packagist&style=flat-square)](https://packagist.org/packages/xocotlah/smart-controller)
+[![PHP from Packagist](https://img.shields.io/packagist/php-v/xocotlah/smart-controller.svg?style=flat-square)]()
+[![GitHub license](https://img.shields.io/github/license/Xocotlah/SmartController.svg?label=License&style=flat-square)](https://github.com/Xocotlah/SmartController/blob/develop/LICENSE.md)
+[![Travis](https://img.shields.io/travis/Xocotlah/SmartController.svg?label=Travis-CI&style=flat-square)](https://travis-ci.org/Xocotlah/SmartController)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/c36ed66b-d9bf-4c8f-b490-42cbee3d1a14.svg?label=Sensiolabs%20Insight&style=flat-square)](https://insight.sensiolabs.com/projects/c36ed66b-d9bf-4c8f-b490-42cbee3d1a14)
+
 SmartController is a controller you can use with League/Route.
 
 Features:
